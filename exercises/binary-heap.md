@@ -40,3 +40,38 @@ Use the following steps to design the test suite:
 Use the project in [tp3-heap](../code/tp3-heap) to complete this exercise.
 
 ## Answer
+
+### Question 1
+
+On peut essayer différentes données d'entrées. Le but est d'insérer la plus petite valeur dans le tas à des endroits différents. De même on peut ajouter la 2eme, 3eme, ... plus petites valeurs à des endroits différents aussi. Cela vaut pour la méthode `peek()` `pop()` et `push()`
+
+
+### Question 2
+
+On obtient alors :
+
+| Coverage | Covered instructions | Missed instruction |
+| ------ | ------ | ------ |
+| 100% | 218 | 0 |
+
+### Question 3
+
+Il semblerait que le BCC soit satisfait.
+
+### Question 4
+
+| Line Coverage | Mutation coverage | Test Strength |
+| ------ | ------ | ------ |
+| 100% (40/40) | 85% (28/33) | 85% (28/33) |
+
+Il reste 5 mutants vivant :
+
+- 4 changements de conditions dans des if
+- un changement de + en -
+
+En ayant rajouter des tests qui vérifie plus de conditions sur les mutations on obtient un nouveau score :
+| Line Coverage | Mutation coverage | Test Strength |
+| ------ | ------ | ------ |
+| 100% (40/40) | 94% (31/33) | 94% (31/33) |
+
+Il ne reste plus que 2 mutants vivants dans des conditions mutées.

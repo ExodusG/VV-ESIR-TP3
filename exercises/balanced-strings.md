@@ -26,3 +26,28 @@ Use the project in [tp3-balanced-strings](../code/tp3-balanced-strings) to compl
 
 ## Answer
 
+
+### Question 1
+
+Il y a dans un premier temps les Strings qui sont balancés qui doivent être testé. On peut prendre différentes tailles, imbriquer les parenthèses, crochets, ...
+Dans un deuxième temps, il y a les Strings qui ne sont pas balancés. On peut prendre là aussi différentes tailles, imbriqués des parenthèses, ne pas mettre l'opérateur ouvrant, ou ne pas mettre l'opérateur fermé, oublié plusieurs opérateurs.
+
+### Question 2
+
+On obtient alors :
+
+| Coverage | Covered instructions | Missed instruction |
+| ------ | ------ | ------ |
+| 100% | 71 | 0 |
+
+### Question 3
+
+Il semblerait que le BCC soit satisfait.
+
+### Question 4
+
+| Line Coverage | Mutation coverage | Test Strength |
+| ------ | ------ | ------ |
+| 94% (17/18) | 100% (17/17) | 100% (17/17) |
+
+Aucun mutant ne survit.
